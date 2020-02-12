@@ -15,6 +15,7 @@ plugins:
 	$(MAKE) all -C plugins/modulay
 	$(MAKE) all -C plugins/larynx
 	$(MAKE) all -C plugins/harmless
+	cp -r data/* bin/
 
 gen: plugins dpf/utils/lv2_ttl_generator
 	@$(CURDIR)/dpf/utils/generate-ttl.sh
